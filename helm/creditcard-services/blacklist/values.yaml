@@ -1,0 +1,29 @@
+
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+deploymentName: blacklist-deployment
+serviceName: blacklist
+appLabel: blacklist
+appName: blacklist
+
+replicaCount: 1
+
+image:
+  repository: yoramnagdocker/black-list-service
+  tag: 0.0.9-SNAPSHOT
+
+containerPort: 8000
+
+service:
+  type: ClusterIP
+  port: 8000
+  targetPort: 8000
+
+appname_enabled: true
+profile_enabled: true
+config_enabled: true
+eureka_enabled: true
+resouceserver_enabled: false
+otel_enabled: true
+kafka_enabled: false

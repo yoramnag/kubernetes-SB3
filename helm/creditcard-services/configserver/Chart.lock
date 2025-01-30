@@ -1,0 +1,6 @@
+dependencies:
+- name: creditcard-common
+  repository: file://../../creditcard-common
+  version: 0.1.0
+digest: sha256:edf08aad2c35ff4673a9eb427b92e9a0195aa186571986586cf276034b7bfd76
+generated: "2025-01-12T23:56:05.7517317+02:00"

@@ -1,0 +1,29 @@
+
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+deploymentName: transactions-deployment
+serviceName: transactions
+appLabel: transactions
+appName: transactions
+
+replicaCount: 1
+
+image:
+  repository: yoramnagdocker/transactions-service
+  tag: 0.0.9-SNAPSHOT
+
+containerPort: 8100
+
+service:
+  type: ClusterIP
+  port: 8100
+  targetPort: 8100
+
+appname_enabled: true
+profile_enabled: true
+config_enabled: true
+eureka_enabled: true
+resouceserver_enabled: false
+otel_enabled: true
+kafka_enabled: false
