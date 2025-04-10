@@ -1,0 +1,21 @@
+dependencies:
+- name: creditcard-common
+  repository: file://../../creditcard-common
+  version: 0.1.0
+- name: configserver
+  repository: file://../../creditcard-services/configserver
+  version: 0.1.0
+- name: eurekaserver
+  repository: file://../../creditcard-services/eurekaserver
+  version: 0.1.0
+- name: blacklist
+  repository: file://../../creditcard-services/blacklist
+  version: 0.1.0
+- name: transactions
+  repository: file://../../creditcard-services/transactions
+  version: 0.1.0
+- name: gatewayserver
+  repository: file://../../creditcard-services/gatewayserver
+  version: 0.1.0
+digest: sha256:fc9e9731348611dd724ed364b9898b21a396c8cc55cf9edf84fec3430679a279
+generated: "2025-01-31T00:10:46.622338+02:00"
